@@ -2,10 +2,10 @@
  * Created by haroldmiao on 2015/3/29.
  */
 
-$(function() {
+$(document).ready(function() {
     $.ajax({
         type:"GET",
-        url: "http://192.168.159.169/data?action=get_total_status",
+        url: "/data?action=get_total_status",
         dateType : "json",
         success: function(){
            // $(this).addClass("done");
