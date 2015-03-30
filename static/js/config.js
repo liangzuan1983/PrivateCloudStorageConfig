@@ -2,6 +2,19 @@
  * Created by haroldmiao on 2015/3/29.
  */
 
+$(function() {
+    $.ajax({
+        type:"GET",
+        url: "http://192.168.159.169/data?action=get_total_status",
+        dateType : "json",
+        success: function(){
+           // $(this).addClass("done");
+        },
+        error: function(){
+           // $(this).addClass("done");
+        }
+    });
+});
 
 //function resetContent() {
 //    var today = new Date();
@@ -13,7 +26,9 @@
 //}
 //window.onload = resetContent;
 
+//
+//function openNetwork() {
+//    document.getElementById('configContent').src = "config/network.html";
+//}
 
-function openNetwork() {
-    document.getElementById('configContent').src = "config/network.html";
-}
+

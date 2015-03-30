@@ -12,6 +12,7 @@
 
     <title>配置个人云存储</title>
 </head>
+
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -23,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">配置个人云存储</a>
+            <a class="navbar-brand" href="config.html">配置个人云存储</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -44,7 +45,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
                 <li class="active"><a href="#"><b>配置项目</b> <span class="sr-only">(current)</span></a></li>
-                <li><a href="javascript:void(0);" id="openNetwork" onclick="openNetwork()">配置网络</a></li>
+                <li><a href="config/network.html" id="openNetwork" >配置网络</a></li>
                 <li><a href="">查看硬盘信息</a></li>
                 <li><a href="">重启</a></li>
             </ul>
@@ -54,12 +55,120 @@
 
 
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <!--<h1 class="page-header">总体运行状态</h1>-->
+
+        <h2 class="sub-header">网络状态</h2>
+        <div class="table-responsive">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    有线
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <!--<th>#</th>-->
+                                <th>Mac地址</th>
+                                <th>IP地址</th>
+                                <th>子网掩码</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="success">
+                                <!--<td>1</td>-->
+                                <td>44-45-53-54-00-00</td>
+                                <td>192.168.31.245</td>
+                                <td>255.255.255.0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+
+
+        <div class="table-responsive">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    无线
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <!--<th>#</th>-->
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="success">
+                                <!--<td>1</td>-->
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+
+
+        <h2 class="sub-header">存储状态</h2>
+
+        <div class="table-responsive">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    硬盘
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <!--<th>#</th>-->
+                                <th>已使用</th>
+                                <th>当前剩余</th>
+                                <th>总容量</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="success">
+                                <!--<td>1</td>-->
+                                <td>44-45-53-54-00-00</td>
+                                <td>192.168.31.245</td>
+                                <td>255.255.255.0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
     <!--<div class="col-md-offset-2 main">-->
         <!--<h1 class="page-header">Dashboard</h1>-->
-        <iframe
-                style="width:1000px;height:600px" id="configContent" name="frame_content" scrolling="yes"
-                frameborder="0">
-        </iframe>
+        <!--<iframe-->
+                <!--style="width:1000px;height:600px" id="configContent" name="frame_content" scrolling="yes"-->
+                <!--frameborder="0">-->
+        <!--</iframe>-->
     </div>
 
 </div>

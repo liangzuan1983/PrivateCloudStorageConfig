@@ -8,37 +8,59 @@
     <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../../static/fonts/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link href="../../static/css/dashboard.css" rel="stylesheet">
 
-    <title>登录配置个人云存储</title>
-
+    <title>配置个人云存储</title>
 </head>
+
 <body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../config.html">配置个人云存储</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">用户</a></li>
+                <li><a href="#">帮助</a></li>
 
-    <form class="form-horizontal">
-        <fieldset>
-            <div id="legend" class="">
-                <legend class="">network</legend>
-            </div>
+            </ul>
+            <!--<form class="navbar-form navbar-right">-->
+            <!--<input type="text" class="form-control" placeholder="Search...">-->
+            <!--</form>-->
+        </div>
+    </div>
+</nav>
 
 
-            <div class="control-group">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#"><b>配置项目</b> <span class="sr-only">(current)</span></a></li>
+                <li><a href="/config/network.html" id="openNetwork">配置网络</a></li>
+                <li><a href="">查看硬盘信息</a></li>
+                <li><a href="">重启</a></li>
+            </ul>
+        </div>
 
-                <!-- Text input-->
-                <label class="control-label" for="input01">input</label>
-                <div class="controls">
-                    <input type="text" id="input01" placeholder="" name="ip" class="input-xlarge">
-                </div>
-            </div>
+    </div>
 
-            <div class="control-group">
-                <!-- Button -->
-                <div class="controls">
-                    <button class="btn btn-success" type="submit">Button</button>
-                </div>
-            </div>
 
-        </fieldset>
-    </form>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <!--<div class="col-md-offset-2 main">-->
+        <!--<h1 class="page-header">Dashboard</h1>-->
+
+    </div>
+
+</div>
 
 <script src="../../static/js/jquery-1.11.2.min.js"></script>
 <script src="../../static/js/bootstrap.min.js"></script>
