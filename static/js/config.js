@@ -7,11 +7,18 @@ $(document).ready(function() {
         type:"GET",
         url: "/data?action=get_total_status",
         dateType : "json",
-        success: function(){
-           // $(this).addClass("done");
+        success: function(result) {
+            console.log(result);
+            console.log(result.mac);
+            $("#mac_addr").text(result.mac);
+            $("#ip_addr").text(result.ip);
+
+            $("#used_storage").text(result.usedStorage);
+            $("#all_storage").text(result.allStorage);
+
         },
         error: function(){
-           // $(this).addClass("done");
+            alert('获取服务器信息失败', '错误');
         }
     });
 });
