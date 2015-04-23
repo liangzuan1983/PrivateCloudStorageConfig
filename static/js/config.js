@@ -7,6 +7,7 @@ $(document).ready(function() {
         type:"GET",
         url: "/data?action=get_total_status",
         dateType : "json",
+        timeout: 5000,
         success: function(result) {
             console.log(result);
             console.log(result.mac);

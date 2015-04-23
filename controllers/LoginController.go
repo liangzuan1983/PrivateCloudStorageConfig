@@ -8,8 +8,8 @@ type LoginController struct {
 	beego.Controller
 }
 
-func (c *LoginController) Get() {
-	c.TplNames = "index.html"
+func (this *LoginController) Get() {
+	this.TplNames = "index.html"
 }
 
 func (this *LoginController) Post() {

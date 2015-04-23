@@ -29,8 +29,10 @@ func (this *DataController) Get() {
         this.Data["json"] = ts
         this.ServeJson()
      }
+}
 
-
+func (this *DataController) Post() {
+    beego.Info("DataController Post")
 
 }
 
@@ -59,9 +61,7 @@ func (this *InfoOperation)getTotalStatus()  (*TotalStatus, error) {
         return nil, err
     }
     beego.Info(mac)
-
     ts.Mac = mac
-
     dud, err := GetDiskUsage()
     if err != nil {
         beego.Error("getTotalStatus Failed")

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../static/fonts/Font-Awesome-3.2.1/css/font-awesome.min.css">
     <link href="../../static/css/dashboard.css" rel="stylesheet">
 
+    <!--<link href="static/css/signin.css" rel="stylesheet">-->
+
     <title>配置个人云存储</title>
 </head>
 
@@ -57,6 +59,170 @@
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         <!--<div class="col-md-offset-2 main">-->
         <!--<h1 class="page-header">Dashboard</h1>-->
+        <!--<h2 class="sub-header">网络状态</h2>-->
+        <!--<form class="form-horizontal">-->
+            <!--<fieldset>-->
+                <!--<div id="legend" class="">-->
+                    <!--<legend class="">配置无线网络</legend>-->
+                <!--</div>-->
+                <!--<div class="control-group">-->
+
+                    <!--&lt;!&ndash; Text input&ndash;&gt;-->
+                    <!--<label class="control-label" for="ssid">ssid</label>-->
+                    <!--<div class="controls">-->
+                        <!--<input type="text"  id="ssid" placeholder="ssid" class="input-xlarge">-->
+                        <!--<p class="help-block">Supporting help text</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="control-group">-->
+
+                    <!--&lt;!&ndash; Text input&ndash;&gt;-->
+                    <!--<label class="control-label" for="username">username</label>-->
+                    <!--<div class="controls">-->
+                        <!--<input type="text" id="username" placeholder="username" class="input-xlarge">-->
+                        <!--<p class="help-block">Supporting help text</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+
+                <!--<div class="control-group">-->
+
+                    <!--&lt;!&ndash; Text input&ndash;&gt;-->
+                    <!--<label class="control-label" for="password">password</label>-->
+                    <!--<div class="controls">-->
+                        <!--<input type="text" id="password" placeholder="password" class="input-xlarge">-->
+                        <!--<p class="help-block">Supporting help text</p>-->
+                    <!--</div>-->
+                <!--</div><div class="control-group">-->
+                <!--<label class="control-label"></label>-->
+
+                <!--&lt;!&ndash; Button &ndash;&gt;-->
+                <!--<div class="controls">-->
+                    <!--<button class="btn btn-success">提交</button>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--</fieldset>-->
+        <!--</form>-->
+
+        <div class="table-responsive">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    配置有线网络
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <form role="form" class="" METHOD="post" id="formConfigWire">
+                            <div class="form-group">
+                                <label for="ip">ip</label>
+                                <input type="text" class="form-control" id="ip" name="ip" placeholder="ip" required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="mask">mask</label>
+                                <input type="text" class="form-control" id="mask" name="mask" placeholder="mask" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary  " id="btnWireConfig">
+                                <i class="ace-icon fa fa-key bigger-110"></i>提交
+                            </button>
+                            <!--<button type="submit" class="btn btn-default">提交</button>-->
+                        </form>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+
+        <!--<div class="container">-->
+            <!--&lt;!&ndash;<form role="form" class="form-signin">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div id="legend2" class="">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<legend class="">配置有线网络</legend>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<label for="ip">ip</label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="email" class="form-control" id="ip" placeholder="ip" required autofocus>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<label for="mask">mask</label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="text" class="form-control" id="mask" placeholder="mask" required>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<button type="submit" class="btn btn-primary  ">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<i class="ace-icon fa fa-key bigger-110"></i>提交&ndash;&gt;-->
+                <!--&lt;!&ndash;</button>&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<button type="submit" class="btn btn-default">提交</button>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;</form>&ndash;&gt;-->
+        <!--</div>-->
+
+        <!--<hr>-->
+
+        <div class="table-responsive">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    配置无线网络
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+
+                        <form role="form" class="">
+                            <div class="form-group">
+                                <label for="ssid">ssid</label>
+                                <input type="text" class="form-control" id="ssid" placeholder="ssid" required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" class="form-control" id="username" placeholder="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">password</label>
+                                <input type="password" class="form-control" id="password" placeholder="password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary  ">
+                                <i class="ace-icon fa fa-key bigger-110"></i>提交
+                            </button>
+                            <!--<button type="submit" class="btn btn-default">提交</button>-->
+                        </form>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+
+        <!--<div class="container">-->
+            <!--<form role="form" class="form-signin">-->
+                <!--<div id="legend" class="">-->
+                <!--<legend class="">配置无线网络</legend>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="ssid">ssid</label>-->
+                    <!--<input type="email" class="form-control" id="ssid" placeholder="ssid" required autofocus>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="username">username</label>-->
+                    <!--<input type="password" class="form-control" id="username" placeholder="username" required>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="password">password</label>-->
+                    <!--<input type="password" class="form-control" id="password" placeholder="password" required>-->
+                <!--</div>-->
+
+                <!--<button type="submit" class="btn btn-primary  ">-->
+                    <!--<i class="ace-icon fa fa-key bigger-110"></i>提交-->
+                <!--</button>-->
+                <!--&lt;!&ndash;<button type="submit" class="btn btn-default">提交</button>&ndash;&gt;-->
+            <!--</form>-->
+        <!--</div>-->
+
+
 
     </div>
 
@@ -64,5 +230,6 @@
 
 <script src="../../static/js/jquery-1.11.2.min.js"></script>
 <script src="../../static/js/bootstrap.min.js"></script>
+<script src="../../static/js/networkConfig.js"></script>
 </body>
 </html>
